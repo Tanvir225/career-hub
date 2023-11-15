@@ -1,7 +1,7 @@
 [
      {
       "id": 1,
-      "logo": "https://i.ibb.co/PzrbTxh/google-1-1-1.png",
+      "logo": "https://w7.pngwing.com/pngs/523/198/png-transparent-google-logo-google-search-google-play-google-text-logo-number.png",
       "job_title": "Technical Database Engineer",
       "company_name": "Google LLC",
       "remote_or_onsite": "Remote",
@@ -12,6 +12,7 @@
       "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
       "educational_requirements": "Bachelor degree to complete any reputational university.",
       "experiences": "2-3 Years in this field.",
+      "featured":true,
       "contact_information": {
         "phone": "01750-00 00 00",
         "email": "info@gmail.com",
@@ -20,7 +21,7 @@
     },
     {
         "id": 2,
-        "logo": "https://i.ibb.co/H4wJGhb/netflix-4-1.png",
+        "logo": "https://pngimg.com/d/netflix_PNG26.png",
         "job_title": "Senior Product Designer",
         "company_name": "Netflix",
         "remote_or_onsite": "Onsite",
@@ -31,6 +32,7 @@
         "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
         "educational_requirements": "Bachelor degree to complete any reputational university.",
         "experiences": "2-3 Years in this field.",
+        "featured":true,
         "contact_information": {
           "phone": "01750-00 00 00",
           "email": "info@gmail.com",
@@ -39,7 +41,7 @@
       },
       {
         "id": 3,
-        "logo": "https://i.ibb.co/JRXgX92/tesla-9-1.png",
+        "logo": "https://www.freepnglogos.com/uploads/tesla-logo-png-25.png",
         "job_title": "Software Engineer",
         "company_name": "Tesla",
         "remote_or_onsite": "Onsite",
@@ -50,6 +52,7 @@
         "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
         "educational_requirements": "Bachelor degree to complete any reputational university.",
         "experiences": "2-3 Years in this field.",
+        "featured":false,
         "contact_information": {
           "phone": "01750-00 00 00",
           "email": "info@gmail.com",
@@ -58,9 +61,9 @@
       },
       {
         "id": 4,
-        "logo": "https://i.ibb.co/PzrbTxh/google-1-1-1.png",
+        "logo": "https://www.pngfind.com/pngs/m/531-5310994_bvcreatives-ltd-datasoft-systems-bangladesh-limited-data-soft.png",
         "job_title": "Software Engineer",
-        "company_name": "Google LLC",
+        "company_name": "DataSoft",
         "remote_or_onsite": "Onsite",
         "location": "Dhaka, Bangladesh",
         "job_type": "Full Time",
@@ -69,6 +72,7 @@
         "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
         "educational_requirements": "Bachelor degree to complete any reputational university.",
         "experiences": "2-3 Years in this field.",
+        "featured":true,
         "contact_information": {
           "phone": "01750-00 00 00",
           "email": "info@gmail.com",
@@ -77,9 +81,9 @@
       },
       {
         "id": 5,
-        "logo": "https://i.ibb.co/JRXgX92/tesla-9-1.png",
+        "logo": "https://static.youthop.com/uploads/sites/2/2021/05/bjit.png",
         "job_title": "Technical Database Engineer",
-        "company_name": "Tesla",
+        "company_name": "BJIT",
         "remote_or_onsite": "Remote",
         "location": "Dhaka, Bangladesh",
         "job_type": "Full Time",
@@ -88,6 +92,7 @@
         "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
         "educational_requirements": "Bachelor degree to complete any reputational university.",
         "experiences": "2-3 Years in this field.",
+        "featured":false,
         "contact_information": {
           "phone": "01750-00 00 00",
           "email": "info@gmail.com",
@@ -96,9 +101,9 @@
       },
       {
         "id": 6,
-        "logo": "https://i.ibb.co/H4wJGhb/netflix-4-1.png",
+        "logo": "https://pridesys.com/wp-content/uploads/2022/03/Pridesys-Logo-1.png",
         "job_title": "Senior Product Designer",
-        "company_name": "Netflix",
+        "company_name": "Pridesys IT",
         "remote_or_onsite": "Remote",
         "location": "Dhaka, Bangladesh",
         "job_type": "Full Time",
@@ -107,6 +112,7 @@
         "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
         "educational_requirements": "Bachelor degree to complete any reputational university.",
         "experiences": "2-3 Years in this field.",
+        "featured":true,
         "contact_information": {
           "phone": "01750-00 00 00",
           "email": "info@gmail.com",
