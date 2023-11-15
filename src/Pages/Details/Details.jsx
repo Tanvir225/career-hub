@@ -22,8 +22,8 @@ const Details = () => {
       >
         <h1 className="font-extrabold text-2xl">Job details</h1>
       </div>
-      <div className="max-w-5xl mx-auto mt-10 flex gap-10">
-        <div className="w-2/3 mx-auto space-y-5">
+      <div className="max-w-5xl px-5 mx-auto mt-10 flex flex-col gap-10 lg:flex-row lg:p-0">
+        <div className=" w-full mx-auto space-y-5 lg:w-2/3">
           <p>
             <span className="font-extrabold">Job Description:</span>{" "}
             <span className="text-sm text-gray-500 font-semibold">
@@ -50,7 +50,7 @@ const Details = () => {
             </span>
           </p>
         </div>
-        <div className="bg-indigo-200 rounded-lg px-3 py-5 w-[30%] mx-auto h-fit space-y-4">
+        <div className="bg-indigo-200 rounded-lg px-3 py-5 w-full mx-auto h-fit space-y-4 lg:w-[32%]">
           <p className="border-b-2 font-semibold">Job Details</p>
           <h1 className="flex items-center gap-2">
             <HiOutlineCurrencyBangladeshi></HiOutlineCurrencyBangladeshi>
