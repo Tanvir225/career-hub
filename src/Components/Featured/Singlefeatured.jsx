@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { CiLocationOn  } from "react-icons/ci";
 import { HiOutlineCurrencyBangladeshi   } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
 const Singlefeatured = ({ job }) => {
   const {
     id,
@@ -37,9 +38,9 @@ const Singlefeatured = ({ job }) => {
             </div>
         </div>
         <div className="card-actions ">
-          <button className="btn btn-outline bg-gradient-to-r from-indigo-600 text-white">
+          <NavLink to={`/job/${id}`} className="btn btn-outline bg-gradient-to-r from-indigo-600 text-white">
             View details
-          </button>
+          </NavLink>
         </div>
       </div>
     </div>

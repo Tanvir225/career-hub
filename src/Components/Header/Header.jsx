@@ -14,7 +14,7 @@ const Header = () => {
                                 <p className='font-semibold'>Career<span className='text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>Hub</span></p>
                                 <ul className="p-2 flex flex-col gap-2">
                                     <NavLink to={"/"}>Statistics</NavLink>
-                                    <NavLink to={""}>Applied Jobs</NavLink>
+                                    <NavLink to={"/jobs"}>All Jobs</NavLink>
                                     <NavLink to={""}>Blog</NavLink>
                                 </ul>
                             </li>
@@ -26,12 +26,12 @@ const Header = () => {
                 <div className="navbar-center hidden lg:flex lg:justify-center lg:items-center">
                     <ul className="menu menu-horizontal px-2 text-lg text-gray-500">
                         <NavLink className="mr-6">Statistics</NavLink>
-                        <NavLink className="mr-6">Applied Jobs</NavLink>
+                        <NavLink className="mr-6" to={"/jobs"}>All Jobs</NavLink>
                         <NavLink className="">Blog</NavLink>
                     </ul>
                 </div>
                 <div className="navbar-end mr-10">
-                    <button className="btn text-sm px-4 py-2 bg-gradient-to-r from-indigo-800 text-white">Start Applying</button>
+                    <NavLink to={"/jobs"} className="btn text-sm px-4 py-2 bg-gradient-to-r from-indigo-800 text-white">Start Applying</NavLink>
                 </div>
             </div>
         </div>
