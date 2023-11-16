@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const Main = () => {
     return (
@@ -13,7 +14,7 @@ const Main = () => {
             <div className="mt-10">
                 <Footer></Footer>
             </div>
-
+            <Toaster></Toaster>
         </div>
     );
 };

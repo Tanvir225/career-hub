@@ -6,7 +6,7 @@ import Banner from "../../Components/Header/Banner";
 const Home = () => {
     const [jobs,setJobs] = useState([])
     useEffect(()=>{
-        fetch('../../../public/data/jobs.json')
+        fetch('/data/jobs.json')
         .then(res=> res.json())
         .then(data=> setJobs(data))
     },[])

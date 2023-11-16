@@ -3,7 +3,7 @@ import SingleCat from "./SingleCat";
 const CaragoryList = () => {
     const [catagory,setCatagory] = useState([])
     useEffect(()=>{
-        fetch('../../../public/data/categories.json')
+        fetch('/data/categories.json')
         .then(res => res.json())
         .then(data => setCatagory(data))
     },[])

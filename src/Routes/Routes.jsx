@@ -3,6 +3,7 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home";
 import Jobs from "../Pages/Jobs/Jobs";
 import Details from "../Pages/Details/Details";
+import Statistics from "../Pages/Statistics/Statistics";
 
 
 const myCreatedRoutes = createBrowserRouter([
@@ -12,6 +13,7 @@ const myCreatedRoutes = createBrowserRouter([
         children:[
             {
                 path:"/",
+                // index: true,
                 element:<Home></Home>
             },
             {
@@ -20,7 +22,11 @@ const myCreatedRoutes = createBrowserRouter([
             },
             {
                 path:"/job/:id",
-                element:<Details></Details>
+                element:<Details></Details>,
+            },
+            {
+                path:"/statistics",
+                element:<Statistics></Statistics>
             },
         ]
     }

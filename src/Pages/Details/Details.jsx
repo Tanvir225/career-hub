@@ -1,19 +1,44 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import bgImage from "../../assets/images/bg1.png";
 import { HiOutlineCurrencyBangladeshi } from "react-icons/hi";
 import { LuSubtitles } from "react-icons/lu";
 import { FaPhoneAlt, FaAddressBook, FaMailBulk } from "react-icons/fa";
+import toast, { Toaster } from 'react-hot-toast';
 const Details = () => {
   const [jobs, setJobs] = useState([]);
   useEffect(() => {
-    fetch("../../../public/data/jobs.json")
+    fetch("/data/jobs.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
+  
   const { id } = useParams();
   const findDetails = jobs.find((job) => job.id === parseInt(id));
-
+  const navigate = useNavigate()
+  const handleApply = ()=>{
+    
+    const appliedJob = JSON.parse(localStorage.getItem('applied')|| "[]")
+    if (!appliedJob) {
+      localStorage.setItem('applied',JSON.stringify(findDetails))
+      toast.success("You have applied successfully")
+      navigate(-1)
+     
+    }
+    else{
+      const checkApplied = appliedJob.find(job=> job.id === parseInt(id))
+      if (!checkApplied) {
+        appliedJob.push(findDetails)
+        localStorage.setItem('applied',JSON.stringify(appliedJob))
+        toast.success("You have applied successfully")
+        navigate(-1)
+      }
+      else{
+        toast.error("You have already applied this job ")
+        navigate(-1)
+      }
+    }
+  }
   return (
     <div>
       <div
@@ -22,7 +47,7 @@ const Details = () => {
       >
         <h1 className="font-extrabold text-2xl">Job details</h1>
       </div>
-      <div className="max-w-5xl px-5 mx-auto mt-10 flex flex-col gap-10 lg:flex-row lg:p-0">
+      <div className="max-w-5xl px-5 mx-auto mt-20 flex flex-col gap-10 lg:flex-row lg:p-0">
         <div className=" w-full mx-auto space-y-5 lg:w-2/3">
           <p>
             <span className="font-extrabold">Job Description:</span>{" "}
@@ -86,10 +111,11 @@ const Details = () => {
             </span>
           </h1>
           <div className="text-center bg-transparent">
-            <button className="btn btn-outline btn-primary w-full">Apply Now</button>
+            <button onClick={handleApply} className="btn btn-outline btn-primary w-full">Apply Now</button>
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
