@@ -11,7 +11,7 @@ const Header = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li>
-                                <p className='font-semibold'>Career<span className='text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>Hub</span></p>
+                                <NavLink to={"/"} className='font-semibold' >Career<span className='text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%'>Hub</span></NavLink>
                                 <ul className="p-2 flex flex-col gap-2">
                                     <NavLink to={"/statistics"}>Statistics</NavLink>
                                     <NavLink to={"/jobs"}>All Jobs</NavLink>
