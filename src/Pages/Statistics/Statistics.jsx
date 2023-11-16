@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Singlefeatured from "../../Components/Featured/Singlefeatured";
-import bgImage from "../../assets/images/bg1.png";
+
 import { FaFilter } from "react-icons/fa";
+import DynamicBanner from "../../Components/Header/DynamicBanner";
 const Statistics = () => {
   const appliedJob = JSON.parse(localStorage.getItem("applied"));
 
@@ -35,14 +36,7 @@ const Statistics = () => {
 
   return (
     <div>
-      <div
-        className="h-[40vh] bg-base-200 bg-no-repeat bg-left-bottom flex flex-col items-center justify-center"
-        style={{ backgroundImage: `url(${bgImage})` }}
-      >
-        <h1 className="font-extrabold text-2xl">
-          You have Applied : {filteredData ? filteredData.length : 0} Jobs
-        </h1>
-      </div>
+      <DynamicBanner title= {`You have applied ${filteredData.length} jobs`}></DynamicBanner>
 
       <div className="flex justify-end max-w-5xl mx-auto mt-5 px-5">
         <details className="dropdown ">

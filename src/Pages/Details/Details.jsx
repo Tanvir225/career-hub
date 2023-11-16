@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import bgImage from "../../assets/images/bg1.png";
+
 import { HiOutlineCurrencyBangladeshi } from "react-icons/hi";
 import { LuSubtitles } from "react-icons/lu";
 import { FaPhoneAlt, FaAddressBook, FaMailBulk } from "react-icons/fa";
 import toast from 'react-hot-toast';
+import DynamicBanner from "../../Components/Header/DynamicBanner";
 const Details = () => {
   const [jobs, setJobs] = useState([]);
   useEffect(() => {
@@ -41,12 +42,8 @@ const Details = () => {
   }
   return (
     <div>
-      <div
-        className="h-[40vh] bg-base-200 bg-no-repeat bg-left-bottom flex flex-col items-center justify-center"
-        style={{ backgroundImage: `url(${bgImage})` }}
-      >
-        <h1 className="font-extrabold text-2xl">Job details</h1>
-      </div>
+
+     <DynamicBanner title={`Job Details`}></DynamicBanner>
       <div className="max-w-5xl px-5 mx-auto mt-20 flex flex-col gap-10 lg:flex-row lg:p-0">
         <div className=" w-full mx-auto space-y-5 lg:w-2/3">
           <p>
