@@ -4,7 +4,7 @@ import bgImage from "../../assets/images/bg1.png";
 import { HiOutlineCurrencyBangladeshi } from "react-icons/hi";
 import { LuSubtitles } from "react-icons/lu";
 import { FaPhoneAlt, FaAddressBook, FaMailBulk } from "react-icons/fa";
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 const Details = () => {
   const [jobs, setJobs] = useState([]);
   useEffect(() => {
