@@ -36,12 +36,14 @@ const Statistics = () => {
 
   return (
     <div>
-      <DynamicBanner title= {`You have applied ${filteredData.length} jobs`}></DynamicBanner>
+      <DynamicBanner title= {`You have applied ${filteredData ? filteredData.length :0} jobs`}></DynamicBanner>
 
       <div className="flex justify-end max-w-5xl mx-auto mt-5 px-5">
         <details className="dropdown ">
           <summary className="m-1 btn">
-            <FaFilter></FaFilter>Filter Job
+            {
+              filteredData && (<p className=""><FaFilter></FaFilter>Filter Job</p>) 
+            }
           </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-36">
             <li>
